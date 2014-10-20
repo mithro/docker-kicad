@@ -17,8 +17,6 @@ RUN \
   apt-get install -y curl git sed && \
   apt-get install -y kicad.*
 
-RUN apt-get install xeyes
-
 # Add the Xilinx user
 RUN adduser --disabled-password --gecos "" kicad
 USER kicad
