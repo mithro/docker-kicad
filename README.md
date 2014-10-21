@@ -13,6 +13,9 @@ Run docker container with the following extra arguments;
 See http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/
 
 
+
+<br><br><br><br><br><br>
+
 # KiCad EDA Software Suite
 
 [KiCad][1] is an EDA software suite for the creation of professional schematics and printed circuit boards up to 32 copper layers. KiCad runs on Windows, Linux and Apple OS X and is released under the open-source GNU GPL v2 free of charge.
