@@ -18,8 +18,4 @@ deb http://ppa.launchpad.net/$REPO/ubuntu $DISTRIB_CODENAME main
 deb-src http://ppa.launchpad.net/$REPO/ubuntu $DISTRIB_CODENAME main 
 EOF
 
-export GNUPGHOME=$(mktemp -d --suffix=.gpg)
-chmod 0700 $GNUPGHOME
-gpg --keyserver subkeys.pgp.net --recv-keys $KEY
-gpg --export --armor $KEY | sudo apt-key add - 
-rm -rf $GNUPGHOME
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys $KEY
