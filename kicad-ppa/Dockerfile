@@ -8,7 +8,8 @@ MAINTAINER mithro@mithis.com
 #  apt-get update && \
 #  apt-get upgrade
 
-COPY simple-add-ppa.sh download-kicad-library.sh /usr/local/bin/
+COPY simple-add-ppa.sh /usr/local/bin/
+COPY download-kicad-library.sh /usr/local/bin/
 
 # Add the kicad PPA, update packages, install dependencies, then kicad
 RUN \
