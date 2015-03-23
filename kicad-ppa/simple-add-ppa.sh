@@ -4,7 +4,7 @@ set -x
 set -e
 
 REPO="$(echo $1 | sed -e's/ppa://')"
-FILE="$(echo $1 | sed -e's/[^A-Za-z-]/-/g')"
+FILE="$(echo $1 | sed -e's/[^A-Za-z-]/-/g').list"
 KEY=$2
 
 DISTRIB_CODENAME="$(lsb_release -c -s || echo $3)"
